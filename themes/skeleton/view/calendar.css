@@ -1,0 +1,27 @@
+.skeleton table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+	border-spacing: 0px;
+}
+.skeleton th {
+}
+.skeleton thead {
+}
+.skeleton tfoot {
+}
+.skeleton tbody {
+}
+.skeleton td {
+}
+.skeleton .withoutLink {
+}
+.skeleton .withLink {
+}
+.skeleton .today {
+}
+.skeleton link {
+}
+.skeleton a, .skeleton a:link, .skeleton a:hover {
+}

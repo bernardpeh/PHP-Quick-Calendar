@@ -1,0 +1,59 @@
+.rounded,.rounded table{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-collapse: collapse;
+	text-align:center;
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+/* simple css from sitepoint - http://www.sitepoint.com/article/css-round-corners-boxes-curves/ */
+.rounded_bl {background: url(/qcalendar/themes/rounded/images/bl.gif) 0 100% no-repeat #e68200; width:200px;}
+.rounded_b2 {background: url(/qcalendar/themes/rounded/images/br.gif) 100% 100% no-repeat}
+.rounded_tl {background: url(/qcalendar/themes/rounded/images/tl.gif) 0 0 no-repeat}
+.rounded_t2 {background: url(/qcalendar/themes/rounded/images/tr.gif) 100% 0 no-repeat; text-align:center;padding:4px;}
+.rounded_t2 img {border: 0px;}
+.rounded_clear {font-size: 1px; height: 1px}
+
+.rounded th {
+	font-weight: bold;
+	height: 20px;
+}
+.rounded thead {
+	font-weight: bold;
+	height: 26px;
+	font-size: 1em;
+	width: 100%;
+}
+.rounded tfoot {
+	font-weight: bold;
+	font-size:0.8em;
+	color: #FFFFFF;
+	width:100%;
+	text-align:center;
+	vertical-align: middle;
+}
+.rounded tbody {
+}
+.rounded td {
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	width: 14.28%
+}
+.rounded .withoutLink {
+	border: 1px solid #000000;
+}
+.rounded .withLink {
+	background-color: #dddddd;
+	border: 1px solid #000000;
+}
+.rounded .today {
+	background-color: #FAD2DA;
+	border: 1px solid #000000;
+}
+.rounded a, .rounded a:link, .rounded a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+}

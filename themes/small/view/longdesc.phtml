@@ -1,0 +1,19 @@
+<div class='<?= $css; ?>'>
+<p class="closebutton">
+<a href="#" onclick="document.getElementById(this.parentNode.parentNode.parentNode.id).innerHTML='';">close</a>
+</p>
+
+<?php
+// print_r($this->view) to see all data
+$count = count($hr);
+for ($i = 0; $i < $count; $i++) {	
+	echo "<div class=\"adesc\">";
+	echo "<strong>{$hr[$i]}:{$min[$i]} hrs - {$short_desc[$i]}</strong>";
+	if ($long_desc_image[$i]) { 
+		echo "<p><img src='{$QCALENDAR_WEB_PATH}{$long_desc_image[$i]}'></p>"; 
+	} 
+	echo "<br/>{$long_desc[$i]}";
+	echo '</div>';
+}
+?>
+</div>

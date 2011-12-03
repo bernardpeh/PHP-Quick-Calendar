@@ -1,0 +1,47 @@
+.twocolumn, .twocolumn table {
+	background-color: #DFEFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	text-align:center;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	width: 600px;
+	border-collapse:collapse;
+	cellspacing='0'; 
+	cellpadding='0'
+}
+.twocolumn th {
+}
+.twocolumn thead {
+	text-align:center;
+	height: 28px;
+	vertical-align:middle;
+}
+.twocolumn tbody {
+}
+.twocolumn tfoot {
+	height:24px;
+	border:0px;
+}
+.twocolumn td {
+	vertical-align: top; 
+	text-align: left;
+	font-size:0.9em;
+	border-bottom:1px solid #ccc;
+	padding: 4px;
+}
+.twocolumn .today {
+	background-color: #cccccc;
+}
+.twocolumn .withLink {
+	font-weight: bold;
+}
+.twocolumn .withoutLink {
+}
+.twocolumn a, .twocolumn a:link, .twocolumn a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+}

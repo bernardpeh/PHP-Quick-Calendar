@@ -1,0 +1,51 @@
+<table class='<?= $css; ?>'>
+
+<thead>
+<tr><th colspan='3'><a href="#" onclick="<?= $lastMonth; ?>" title='Prev Month'>< Last Month</a>&nbsp;&nbsp;&nbsp;<?= $header; ?>&nbsp;&nbsp;&nbsp;<a href="#" onclick="<?= $nextMonth; ?>" title='Next Month'>Next Month ></a><th></tr>
+</thead>
+
+<tbody>
+<?php
+$days = array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+for($i=0; $i<$weeksInMonth; $i++) {
+	for ($j=0; $j < 7; $j++) {
+		// skip cell if it is empty
+		if (!$cell[$i][$j]['value']) {
+			continue;
+		}
+		echo '<tr>';
+		// design each cell
+		if ($cell[$i][$j]['link'] != 'none') {
+			$class = 'withLink';
+		}
+		else if ($cell[$i][$j]['isToday']) {
+			$class = 'today';
+		}
+		else {
+			$class = 'withoutLink';
+		}
+
+		echo "<td class='$class' style='width:50px;padding-left:8px;'>";
+		
+		// display cell value
+		echo 'Day '. $cell[$i][$j]['day'].'</td><td>'.$days[$j].'</td><td>';
+		
+		// display short details
+		$count = 0;
+		if ($cell[$i][$j]['short_desc'][$count] != '') {
+			foreach ($cell[$i][$j]['short_desc'] as $v) {
+				echo "<li>{$cell[$i][$j]['hr'][$count]} : {$cell[$i][$j]['min'][$count]} hrs - {$v}</li>";
+				$count++;
+			}
+		}
+		echo '</td></tr>';
+	}
+}
+?>
+</tbody>
+
+<tfoot>
+<tr><th colspan='3'></th></tr>
+</tfoot>
+
+</table>

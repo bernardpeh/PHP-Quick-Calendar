@@ -1,0 +1,46 @@
+.plain, .plain table {
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+.plain th {
+	font-weight: bold;
+	height: 20px;
+}
+.plain thead {
+	background-color: #fff;
+	font-weight: bold;
+	height: 24px;
+	color: #666666;
+}
+.plain tfoot {
+}
+.plain tbody {
+	color: #ccc;
+}
+.plain td {
+	width: 24px;
+	height: 22px;
+	text-align: center;
+	font-size:0.9em;
+	padding: 2px;
+}
+.plain .withoutLink {
+	padding: 2px;
+	vertical-align: middle;
+}
+.plain .withLink {
+	font-weight: bold;
+	padding: 2px;
+}
+.plain .today {
+	padding: 2px;
+	vertical-align: middle;
+}
+.plain a, .plain a:link, .plain a:hover {
+	text-decoration: underline;
+}

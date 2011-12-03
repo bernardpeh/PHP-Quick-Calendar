@@ -1,0 +1,76 @@
+PHP Quick Calendar is an easily customisable online calendar created in PHP and MYSQL. It is light weight and easy to install. The inbuilt MVC architecture allows easy customisation of calendar display. User can choose existing templates or create their own. It uses AJAX to refresh the dates, improving user browsing experience. This is my contribution back to the open source community, so let us all improve on it.  
+
+I have received feedback that the calendar is useful for students who want to learn PHP, MVC and Ajax.
+
+Advantages:
+
+    Able to integrate easily with any CMS.
+    Light weight and easy to install.
+    Does not depend on any external AJAX or PHP libraries/framework to operate.
+    No heavy client side javascript. Compatible with all Browsers.
+    Compatible with PHP 5 and 4.
+    I think programmers will like the MVC architecture. Back to basics – not using any complicated rendering engine.
+    Look and feel easily editable using CSS.
+    Does not depend on client machine date. Some people backdate their machine date and time and you know what happens.
+    Open source.
+
+Disadvantages:
+
+    Need to have programming skills if you want to create your own theme/template.
+
+Possible Improvements:
+
+    Improve in the process of creating own templates.
+    Improve admin UI.
+    Add more tutorials on how to integrate this calendar into popular CMS like wordpress.
+
+Installation:
+
+Installing the quick calendar is easy. Follow the steps below:
+
+    Make sure your have LAMP running.
+    If using PHP 4, need to have magic_quote off. Check that the php directive short_open_tag is 1 (editable via php.ini or .htaccess). The phpinfo() function reveals all your settings.
+    Download the source code from here
+    Unzip the downloaded code into a directory of your choice.
+    Rename config.bak.php to config.php. Configure config.php with the right db and path details.
+    There should be a sql file in the dowloaded code. Run the sql in your server to create the sample tables and data. You can of course empty the tables and populate with new data later.
+    Lets try to insert a ’small’ calendar. Paste the following code into the page where you want your calendar to appear:
+
+    <?php
+    require_once('path_to/controller.php');
+    $cssCalendar= 'float:left;margin-right:30px;';
+    $cssLongDesc='float:left;margin-left:50px;width:400px';
+    // configure calendar theme
+    initQCalendar('small','qCalendarSmall', $cssCalendar, 'myContentSmall', $cssLongDesc, 0,0,0,0,0);
+    ?>
+
+    make sure the 'path_to' is the system path to your quick calendar directory.
+    If you want to customise the calendar, you need to have the right parameters for the initQCalendar() function depending on the theme you choose:
+
+    initQCalendar(theme, divCalendar, calendarCss, divLongDesc, longDescCss, day, month, year, category_id, ajax)
+
+    where
+
+    'theme': name of the theme you want to use. It is the directory name under the themes directory.
+
+    'divCalendar': name of the div you want to use to wrap around the calendar.
+
+    'calendarCSS': CSS for DivCalendar above.
+
+    'divLongDesc': name of the div where you want the long description to populate. This can be a new div or an existing one in the page. If it is a new div, you need to create one as shown in the sample above.
+
+    'longDescCss': CSS for the Long Description.
+
+    'day': current day. Leave 0 as the default.
+
+    'month': current month. Leave 0 as the default.
+
+    'year': current year. Leave 0 as the default.
+
+    'category_id': 0 means show all categories.
+
+    'ajax': Determines if this is an ajax call or not. Leave 0 as the default.
+    That’s it. The best way to learn is to look at the demos. Duplicate the theme in the demo and play around.
+
+
+See author website for more demo and updates: http://www.azhowto.com/quick-calendar/

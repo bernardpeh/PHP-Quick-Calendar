@@ -1,0 +1,11 @@
+.small_longdesc .closebutton{
+	font-size:9px;
+	float:right;
+	margin:2px;
+	padding:2px;
+	border: 1px solid #333;
+	background-color: #cdcdcd;
+}
+.small_longdesc .adesc {
+	border: 1px solid #333; padding: 4px;
+}

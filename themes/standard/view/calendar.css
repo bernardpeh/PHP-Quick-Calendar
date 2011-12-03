@@ -1,0 +1,68 @@
+.standard, .standard table {
+	background-color: #F3F3F3;
+	border: 1px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	text-align:center;
+	border-spacing: 0px;
+}
+.standard th {
+	background-color: #A3D39C;
+	font-weight: bold;
+	height: 24px;
+}
+.standard thead {
+	background-color: #F26522;
+	font-weight: bold;
+	height: 30px;
+	color: #FFFFFF;
+	
+}
+.standard tbody {
+}
+.standard tfoot {
+	background-color: #F26522;
+	font-weight: bold;
+	font-size:0.8em;
+	color: #FFFFFF;
+	text-align:center;
+}
+.standard td {
+	width: 84px;
+	height: 84px;
+	vertical-align: top; 
+	text-align: left;
+	font-size:0.9em;
+	border: 1px solid #333333;
+}
+.standard .today {
+	background-color: #cccccc;
+	padding: 2px;
+}
+.standard .withoutLink {
+	font-weight: bold;
+	padding: 2px;
+}
+.standard .withLink {
+	padding: 2px;
+	background-color: #D4C9EF;
+}
+.standard .cellLink {
+	font-weight: bold;
+	height: 62px;
+	width: 84px;
+	overflow: auto;	
+}
+.standard a, .standard a:link, .standard a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+}
+.standard li {
+	list-style-position: inside;
+}
+.standard img {
+	border: 0px;
+}

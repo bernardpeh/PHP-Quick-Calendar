@@ -1,0 +1,46 @@
+3 Dec 2011 (ver 2.5)
+* License changed from GNU GPL to Open Software License (OSL 3.0)
+* Project moved to github.
+
+9 March 2009 (Ver 2.5)
+* Fixed minor bug relating to event date not displaying in order.
+
+5 Feb 2009 (Ver 2.4)
+* Thanks kirk for suggesting a bunch of changes. I have implemented quite a few - too wordy to describe them here. If you are interested, see the evolt comments that kirk837 has written.
+* Added category to events. This impacted the code and query quite abit.
+* Added sms and emailing capability. Email alert is straight forward. For sms, you have to add your own code. See cron.php
+* Updated admin to include new features. The focus on admin area is still on the functionality. Will work on the look and feel later.
+* Made further changes to filenames. Added new css for longdesc file.
+* fixed hyperlink jumpiness problem. Removed the use of # as hyperlink.
+* Used single quotation instead of double in some places. Not really necessary but good practice.
+* Added new tiny calendar template.
+* Added new complex calendar template. I attempted to combine different types of calendar together and did some tricks.
+* This application is getting quite complicated now. I didn't expect it to evolve till this stage. But... anyway, have fun.
+
+17 Jan 2009 (Ver 2.3)
+* Made changes to DB. There are different types of link now.
+* Implemented full MVC architecture. Well, you can't escape from not using for-loop but at least everything is more organised. That is why rendering calendar can be complicated. At least the view file looks manageable.
+* Major rename of file names and re-organised folders.
+* Mass cleanup of CSS in demos. Removed redundant CSS.
+* Fixed fillArray logic. User can now start the week with anyday.
+* Fixed typos and added comments.
+* Updated admin area. Fixed simpel bugs. user able to delete images from admin panel. Admin still basic, not intending to make it complicated.
+* Added a plain calendar.
+* Updated multiple template.
+* Still not very happy with the controller... Man, I wanted to stop but my fingers doesn't allow me to!! Have fun guys.
+
+14 Jan 2009 (Ver 2.2)
+* Calendar now supports hrs, mins and images.
+* Added 'order by' to sql statements.
+* Made admin area more user friendly but still very basic.
+* Displaying multiple calendars in one page is now very easy to achieve (See demo).
+* Improved logic flow and fix typos.
+
+11 Jan 2009 (Ver 2.1)
+* Added new admin panel - Really simple one.
+* fixed sql bug in QCalendarBase.php.
+* added extra fields in DB for future use.
+
+10 Jan 2009 (Ver 2.0)
+* Finally managed to package everything together using better software architecture and techniques.
+* My christmas break was burned!!!

@@ -1,0 +1,45 @@
+.tiny, .tiny table {
+	background-color: #fff;
+	font-family: verdana;
+	font-size: 10px;
+	margin:0px;
+	padding:0px;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+.tiny th {
+	font-weight: bold;
+}
+.tiny thead {
+	background-color: #fff;
+	font-weight: bold;
+	height: 18px;
+	color: #666666;
+}
+.tiny tfoot {
+}
+.tiny tbody {
+	color: #ccc;
+}
+.tiny td {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	padding: 2px;
+}
+.tiny .withoutLink {
+	padding: 2px;
+	vertical-align: middle;
+}
+.tiny .withLink {
+	font-weight: bold;
+	padding: 2px;
+	background-color: #cccccc;
+}
+.tiny .today {
+	padding: 2px;
+	vertical-align: middle;
+}
+.tiny a, .tiny a:link, .tiny a:hover {
+	text-decoration: underline;
+}

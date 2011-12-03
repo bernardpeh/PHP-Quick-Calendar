@@ -1,0 +1,46 @@
+<table class='<?= $css; ?>'>
+
+<thead>
+<tr><th colspan='7'><?= $header; ?></th></tr>
+</thead>
+
+<tbody>
+<tr><th>S</th><th>M</th><th>T</th><th>W</th><th>Th</th><th>F</th><th>S</th></tr>
+<?php
+
+for($i=0; $i<$weeksInMonth; $i++) {
+	// display the row
+	echo '<tr>';
+	// display the column
+	for ($j=0; $j < 7; $j++) {
+		// design each cell
+		if ($cell[$i][$j]['link'] != 'none') {
+			$class = 'withLink';
+		}
+		else if ($cell[$i][$j]['isToday']) {
+			$class = 'today';
+		}
+		else {
+			$class = 'withoutLink';
+		}
+
+		echo "<td class=\"$class\">";
+		
+		// display cell value
+		echo "<div onmouseover=\"this.style.border='1px solid #ccc';\" onmouseout=\"this.style.border='none';\">";
+		echo $cell[$i][$j]['day'];
+		echo "</div>";
+		echo '</td>';
+	}
+	
+	// end row
+	echo '</tr>';
+}
+?>
+</tbody>
+
+<tfoot>
+
+</tfoot>
+
+</table>

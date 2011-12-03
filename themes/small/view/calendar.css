@@ -1,0 +1,61 @@
+.small, .small table  {
+	background-color: #F3F3F3;
+	border: 1px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+.small th {
+	background-color: #dddddd;
+	font-weight: bold;
+	height: 20px;
+}
+.small thead {
+	background-color: #cdcdcd;
+	font-weight: bold;
+	height: 24px;
+	color: #000;
+}
+.small tfoot {
+	background-color: #cccccc;
+	font-weight: bold;
+	font-size:0.8em;
+	color: #FFFFFF;
+	width:100%;
+	text-align:center;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+.small tbody {
+}
+.small td {
+	width: 24px;
+	height: 22px;
+	text-align: center;
+	font-size:0.9em;
+	padding: 2px;
+}
+.small .withoutLink {
+	font-weight: bold;
+	padding: 2px;
+	vertical-align: middle;
+}
+.small .withLink {
+	font-weight: bold;
+	padding: 2px;
+	background-color: #dddddd;
+}
+.small .today {
+	background-color: #FAD2DA;
+	padding: 2px;
+	width: 20px;
+	height: 18px;
+}
+.small a, .small a:link, .small a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000000;
+}
